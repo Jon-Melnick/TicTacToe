@@ -1,0 +1,116 @@
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+  font-family: 'Rubik', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.grid > li {
+  float: left;
+  width: 100px;
+  height: 100px;
+  text-decoration: none;
+  border: solid white;
+  transition: all .4s ease-out;
+  background-color: #0051BA;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+.has-hover:hover {
+  cursor: pointer;
+  transition: all .4s ease-out;
+  background-color: #C41E3A;
+}
+
+.winner li {
+  background-color: #FF5800;
+}
+/*Orange: 021C "Pantone Orange" #FF5800*/
+.grid {
+  width: 320px;
+  list-style: none;
+  margin: auto;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.again-button {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.again-button > *:hover {
+
+
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  transition: all .3s ease-out;
+  background-color: rgba(196, 30, 0, 0.45);
+}
+
+.again-button * {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #fff;
+  background-color: #C41E3A;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+
+}
